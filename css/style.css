@@ -1,0 +1,1050 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 4500px;
+   
+}
+.header{
+    background-color: rgb(247, 172, 32);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: 1;
+}
+.img1{
+    width: 140px;
+    height: 60px;
+    margin-left: 100px;
+    float: left;
+}
+.list1 li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+}
+.list1{
+    float: right;
+    margin-right: 200px;
+    margin-top: 20px;
+
+}
+/* nesting */
+.list1 li a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+.list1 li :hover{
+    /* background-color: white; */
+    color: white;
+}
+
+.parent{
+    width: 100% ;
+    height: 100vh;
+    background-image: url(../imeges/books.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.content{
+    width: 100%;
+    /* background-color: aqua; */
+    /* hero image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    color: wheat ; 
+}
+.span1{ 
+    text-transform: capitalize;
+    font-size: 60PX;
+    color: rgb(232, 174, 66);
+    word-spacing: 4PX;
+    letter-spacing: 5PX;
+    margin-bottom: 30px;
+}
+
+h2{
+    text-transform: capitalize;
+    color: white;
+    font-size: 50PX;
+    word-spacing: 2PX;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    
+}
+.content p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-bottom:60px;
+}
+.but2 , .but1{
+    width: 150px; 
+    height: 60px;
+    font-size: 22px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    opacity: 0.9;
+}
+.but1:hover{
+    opacity: 0.5;
+}
+.but2:hover{
+    opacity: 0.5;
+}
+.style{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.underline{
+    width: 200px;
+    height: 5px;
+    border-radius: 40%;
+    background-color: black;
+    margin: auto;
+    margin-top: -20px;
+}
+.container{
+    width: 90%;
+    height: 280px;
+    background-color: bisque;
+    margin: auto;
+    margin-top: 50px;
+    z-index: 99;
+}
+.div1{
+    width: 300px;
+    height: 220px;
+    background-image: url(../imeges/div.jpg);
+    background-size: cover;
+    float: left;
+    margin: -250px 50px;
+    position: relative;
+    
+}
+.div2{
+    width: 300px;
+    height: 220px;
+    background-image: url(../imeges/div.jpg);
+    background-size: cover;
+    float: left;
+    margin: -250px  410px;
+    position: relative;
+}
+.div3{
+    width: 300px;
+    height: 220px;
+    background-image: url(../imeges/div.jpg);
+    background-size: cover;
+    float: left;
+    margin: -280px 360px;
+    position: relative;
+}
+.divtitle1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    opacity: 1;
+}
+.divtitle2{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.divtitle3{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+.divtitle3 h2{
+    font-size: 30px;
+    line-height: 60px;
+}
+.border1{
+    width: 5px;
+    height: 100%;
+    border: 3px solid black;
+}
+.border2{
+    width: 5px;
+    height: 100%;
+    border: 3px solid black;
+    float: right;
+    margin: -280px auto;
+}
+.div1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.667);
+    transition: 1s;
+}
+.div1:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.div2::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.667);
+    transition: 1s;
+}
+.div2:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.div3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.667);
+    transition: 1s;
+}
+.div3:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.circil1{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(179, 179, 221);
+    margin: 35px 140px;
+}
+.number{
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+.circil2{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(179, 179, 221);
+    margin: 35px 140px;
+}
+.number{
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.circil3{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(179, 179, 221);
+    margin: 27px 140px;
+}
+.number{
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.style2{
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.underline2{
+    width: 200px;
+    height: 5px;
+    border-radius: 40%;
+    background-color: black;
+    margin: auto;
+}
+.div4{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 30px -360px;
+    z-index: 99;
+}
+.a3{
+    margin: 0 150px;
+}
+.div5{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 30px  20px;
+}
+.div6{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: -280px 400px;
+}
+.div7{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-left: -360px;
+    margin-top: 30px;
+}
+.div8{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 30px 20px;
+}
+.div9{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin:-280px 400px;
+}
+.style5{
+    float: right;
+    margin: 2px 9px;
+}
+.style4{
+    float: right;
+    margin:-230px 30px;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+.style6{
+    background-color: rgb(111, 244, 111);
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.parent1{
+    float: left;
+    margin: -230px 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:rgb(245, 240, 240);
+}
+.a2{
+    float: left;
+    margin: 9px 7px; 
+    color: gray;
+}
+.parent:hover{
+    background-color: red;
+}
+.content1{
+    text-align: center;
+    color:white;
+    margin: -100px auto;
+    font-size: 30px;
+    margin-top: -140px;
+    position: relative;
+}
+
+.p1{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 15px; 
+    color: black; 
+}
+.div4:hover{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: 1s;
+}
+.div5:hover{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: 1s;
+}
+.div6:hover{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: 1s;
+}
+.div7:hover{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: 1s;
+}.div8:hover{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: 1s;
+}
+.div9:hover{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: 1s;
+}
+.p1::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+}
+.p1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 1s;
+}
+.div10{
+    width: 270px;
+    height: 160px;
+    background-color: gainsboro;
+    float: left;
+    margin: 30px -350px;
+    position: relative;
+}
+.div11{
+    width: 270px;
+    height: 160px;
+    background-color: gainsboro;
+    float: left;
+    margin: 32px 10px;
+    position: relative;
+}
+.div12{
+    width: 270px;
+    height: 160px;
+    background-color: gainsboro;
+    float: left;
+    margin: -192px 370px;
+    position: relative;
+}
+.div13{
+    width: 270px;
+    height: 160px;
+    background-color: gainsboro;
+    float: left;
+    margin: 80px -350px;
+    position: relative;
+}
+.div14{
+    width: 270px;
+    height: 160px;
+    background-color: gainsboro;
+    float: left;
+    margin: 80px 10px;
+    position: relative;
+}
+.div15{
+    width: 270px;
+    height: 160px;
+    background-color: gainsboro;
+    float: left;
+    margin: -240px 370px;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    font-size: 23px;
+    color: black;
+    margin-left:55px;
+    margin-top: -40px;
+}
+.div10 i{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+.div11 i{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+.div12 i{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+.div13 i{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+.div14 i{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+.div15 i{
+    margin: 20px 20px;
+    font-size: 25px;
+}
+
+.p2{
+    font-size: 16px;
+    margin-left: 100px;
+    color: black;
+}
+.divborder10{
+    width: 270px;
+    height: 4px;
+    border: 2px solid blue;
+    margin: -139px 0;
+}
+.div10 .divborder10{
+    margin: -165px 0;
+}
+.div12 .divborder10{
+    margin: -165px 0;
+}
+.div13 .divborder10{
+    margin: -121px 0;
+}
+.div14 .divborder10{
+    margin: -165px 0;
+}
+.div10::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    top:1;
+    left:1;
+    background-color: black;
+}
+.div10:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+}
+
+.div11::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    top:1;
+    left:1;
+    background-color: black;
+    z-index: 100;
+}
+.div11:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+}
+.div12::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    top:1;
+    left:1;
+    background-color: black;
+    z-index: 100;
+}
+.div12:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+}
+.div13::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    top:1;
+    left:1;
+    background-color: black;
+    z-index: 100;
+}
+.div13:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+}
+.div14::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    top:1;
+    left:1;
+    background-color: black;
+}
+.div14:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+}
+.div15::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    top:1;
+    left:1;
+    background-color: black;
+    z-index: 100;
+}
+.div15:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 1;
+}
+.parent2{
+    width: 1265px;
+    height: 450px;
+    float: left;
+    margin-left: -475px;
+    margin-top: -80px;
+    background-color: rgb(203, 202, 202);
+}
+.ces2{
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+    /* background-color: black; */
+    background-image: url(../imeges/books.jpg);
+    background-size: cover;
+    float: right;
+    margin: 40px 100px ;
+    border: 8px solid rgb(55, 55, 143);
+}
+.title1{
+    color: black;
+    margin: 80px 60px;
+    font-style: oblique;
+}
+.underline3{
+    width: 200px;
+    height: 5px;
+    border-radius: 40%;
+    background-color: black;
+    margin: 100px -680px;
+}
+.p3{
+    margin: 10px 70px;
+    color: rgb(88, 86, 86);
+}
+span{
+    color: blue;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+.p4{
+    margin: -15 30px;
+    text-transform: capitalize;
+    color: rgb(88, 86, 86);
+
+}
+.icon5{
+    margin: 30px 70px;
+    color: blue;
+}
+.p5{
+    margin: -15px 100px;
+    text-transform: capitalize;
+    color: rgb(88, 86, 86);
+}
+.icon6{
+    margin: -20px 70px;
+    color: blue;
+}
+.p6{
+    margin: -48px 100px;
+    text-transform: capitalize;
+    color: rgb(88, 86, 86);
+}
+.icon7{
+    margin: 30px 70px;
+    color: blue;
+}
+.p7{
+    margin: -78px 100px;
+    text-transform: capitalize;
+    color: rgb(88, 86, 86);
+}
+.icon8{
+    margin: 60px 70px;
+    color: blue;
+}
+.point{
+    float: right;
+    margin: 110px -310px;
+    word-spacing: 5px;
+}
+.item1{
+    color: blue;
+}
+.item2{
+    color: gray;
+}
+.item2:hover{
+    color: blue;
+}
+.container10{
+    width: 1550px;
+    height: 100vh;
+    background-color: rgb(227, 225, 225);
+    float: left;
+    margin-left: -760px;
+}
+.style7{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: capitalize;
+    color: black;
+    margin-left: 350px;
+}
+.premium-item1{
+    width: 300px;
+    height: 350px;
+    background-image: url(../imeges/photo.jpg);
+    background-size: cover;
+    float: left;
+    margin-top: 150px;
+    margin-left: -1150px;
+    position: relative;
+}
+.premium-item2{
+    width: 300px;
+    height: 350px;
+    background-image: url(../imeges/photo.jpg);
+    background-size: cover;
+    float: left;
+    margin: -400px 7px;
+    position: relative;
+}
+.premium-item3{
+    width: 300px;
+    height: 350px;
+    background-image: url(../imeges/photo.jpg);
+    background-size: cover;
+    float: left;
+    margin: -400px 370px;
+    position: relative;
+}
+.premium-title{
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.premium-circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 3px solid black;
+    margin: auto;
+}
+.premium-title2{
+    font-size: 17px;
+    margin: 40px 25px;
+    font-weight: 900;
+    color: rgb(241, 210, 151);
+    
+}
+.premium-paragrah{
+    text-align: center;
+    color: rgb(241, 210, 151);
+    font-size: 17px;
+}
+.premium-end{
+    width: 150px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: rgba(241, 210, 151, 0.639) ;
+    margin:25px  auto;
+}
+.end{
+    font-size: 20px;
+    margin-left: 40px;
+    color: black;
+}
+.premium-item1::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:0;
+    transition: 1s;
+    top: 0;
+    left: 1;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+.premium-item1:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.premium-item2::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:0;
+    transition: 1s;
+    top: 0;
+    left: 1;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+.premium-item2:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.premium-item3::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:0;
+    transition: 1s;
+    top: 0;
+    left: 1;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+.premium-item3:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.premium-overlay{
+    width: 300px;
+    height: 4px;
+    border: 2px solid blue;
+    margin-top: 32px;
+}
+.convent-item{
+    width: 1290px;
+    height: 100vh;
+    background-color: rgb(159, 135, 84);
+    float: left;
+    margin-left: -500px;
+}
+.convent-photo1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url(../imeges/books.jpg);
+    background-size: cover;
+    margin: 150px 200px;
+}
+.convent-photo2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-image: url(../imeges/photo.jpg);
+    background-size: cover;
+    margin: -250px 750px;
+}
+.convent-title{
+    margin-left: 110px;
+    font-size: 30px;
+}
+.convent-title1{
+    margin-left:110px;
+    margin-top: -20px;
+    font-size: small;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(83, 83, 232);
+}
+.convent-paragrah{
+    margin: 40px 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container20{
+    width: 350%;
+    /* height: 250px; */
+    /* background-color: brown; */
+    float: left;
+    margin-left: -390px;
+    margin-top: 30px;
+}
+.processor-title{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.processors-item1{
+    float: left;
+    background-color: gray;
+    width: 29%;
+    margin-left: 10px; 
+    padding: 15px; 
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+}
+.center{
+    margin: 0 5%;
+}
+.processors-image{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.processors-image img{
+    width: 100%;
+}
+.processors-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.566);
+    opacity: 0;
+    transition: 1s;
+}
+.processors-item1:hover .processors-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.processors-overlay a{
+    display: block;
+    background-color:rgb(238, 217, 78);
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.processors-overlay a i{
+    line-height: 40px;
+    font-size: 24px;
+}
+.processors-title{
+    color: white;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.processors-parahraph{
+    color: plum;
+    letter-spacing: 2px; 
+}
+.processors-item1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 2s;
+    top: 1;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    opacity: 1;
+}
+.processors-item1:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.processors-item1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 2s;
+    bottom: 1;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.566);
+}
+.processors-item1:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.logo-item{
+    width:1300px;
+    height: 400px;
+    background-color: darkcyan;
+    float: left;
+    margin-left: -510px;
+}
+.logo-image{
+    text-align: center;
+    margin-top: 90px;
+}
+.logo1{
+    margin-left: 400px;
+    margin-right: 30px;
+    color: white; 
+}
+.logo1:hover{
+    color: rgb(239, 154, 51);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
